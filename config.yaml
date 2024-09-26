@@ -6,9 +6,9 @@ params:
   title: aafu theme
   author: Darshan Baral
   description: Website title
-  copyright: >-
-    powered by [hugo](https://gohugo.io/) & deployed on
-    [Cloudflare](https://www.cloudflare.com/)
+  # copyright: >-
+  #   powered by [hugo](https://gohugo.io/) & deployed on
+  #   [Cloudflare](https://www.cloudflare.com/)
   theme:
     mainTheme: dark
     showAttribute: true
@@ -24,34 +24,34 @@ params:
               <link rel="shortcut icon" href="favicon.ico">
 
   profile:
-    name: "First Last, Abbr."
-    tagline: Title
-    location: "City Name, ST"
-    photo: profile.jpg
+    name: "Prudence Fotso M."
+    # tagline: Prudence Fotso M.
+    location: "Hutto, TX, USA"
+    photo: PrudenceDjembaT.png
   social:
     title: Links
     list:
       - icon: fab fa-linkedin-in
-        url: "#"
+        url: "https://www.linkedin.com/in/Prudence-Fotso-Makeugne/"
         title: LinkedIn
-      - icon: fab fa-stack-overflow
-        url: "#"
-        title: StackOverflow
+      # - icon: fab fa-stack-overflow
+      #   url: "#"
+      #   title: StackOverflow
       - icon: fab fa-github
-        url: "#"
+        url: "https://github.com/PrudenceDjembaT/"
         title: GitHub
       - icon: fab fa-twitter
-        url: "#"
+        url: "https://twitter.com/Prudence-Fotso-Makeugne/"
         title: Twitter
-      - icon: fab fa-orcid
-        url: "#"
-        title: Orcid
-      - icon: ai ai-google-scholar
-        url: "#"
-        title: Google Scholar
-      - icon: fab fa-researchgate
-        url: "#"
-        title: ResearchGate
+      # - icon: fab fa-orcid
+      #   url: "#"
+      #   title: Orcid
+      # - icon: ai ai-google-scholar
+      #   url: "#"
+      #   title: Google Scholar
+      # - icon: fab fa-researchgate
+      #   url: "#"
+      #   title: ResearchGate
   showInAccordion:
     - item: aboutme
       expand: true
@@ -62,109 +62,168 @@ params:
     - item: skill
     - item: hobby
   aboutme:
-    title: About Me
+    title: Certified Salesforce Administrator
     icon: fas fa-user
-    description: This is a demo of the `aafu` theme. It has `light` and `dark` theme.
+    description: As a bilingual (English and French) Certified Salesforce Administrator professional, I am seeking a challenging role in a dynamic organization where I can leverage my skills and competencies to grow alongside the company. I am a detail-oriented individual with a demonstrated commitment to excellence and a proven capacity to excel in fast-paced environments.
   experience:
     title: Experiences
     icon: fas fa-briefcase
     list:
-      - position: Job Title
-        dates: 2019 - *Present*
-        company: Company Name
+      - position: Customer Representative
+        # dates: 2019 - *Present*
+        dates: 2015 - 2017
+        company: WalMart – Austin/TX
         details: |1-
-          - Printed from desktop. Sent [emails](#).
-              - Called people *using* telephone.
-          - Drank water from office cooler.
-          - Ate donuts on people's birthdays.
-      - position: Job Title
-        dates: 2018 - 2019
-        url: "#"
-        company: Company Name
+          - Ensuring that all transactions, product restocking, and customer inquiries are handled with precision.
+          - Maintaining accurate records of customer complaints, product returns, and other important data.
+          - Identifying opportunities to offer additional products or services that may interest customers.
+          - Recommending relevant products based on customer needs and preferences.
+          - Proficiency in using Walmart’s Point of Sale systems to process transactions efficiently.
+          - Handling cash, credit card, and other transactions with accuracy and responsibility.
+          - Assisting with stock tracking and store replenishment using Walmart’s systems.
+          - Deep understanding of Walmart's products to help customers with inquiries or purchases.
+      - position: Junior SQL Analyst
+        dates: 2014 - 2015
+        company: University Of Lyon – Lyon/France
+        details: |1-
+          - Provide application support\Database administration for internal applications
+          - Performed Server installation and configuration
+          - Design, Implement and maintain Database Schema, Tables, Stored procedures, Functions and Triggers, Constraints, Indexes, Schemas, Functions, Views, Rules, Defaults and complex SQL statements.
+          - Scheduled Database and Transactional log backups using the Database Maintenance Plans.
+          - Monitor backup availability and verify usability of the backup for disaster situations. 
+          - Play a major role in improving the school Library database system.
+          - Assisted in mining data from the SQL database that was used in several significant presentations.
+          - Assisted in creating and presenting informational reports for management based on SQL data.
+          - Responsible for preparing the existing SQL platform for upgrades that were installed as soon as they were released.
+      - position: Software Analyst
+        dates: 2012 - 2014
+        # url: "#"
+        company: University Of Lyon – Lyon/France
+        details: |1-
+          - Analyzing different user requirements and coming up with specifications for the various database applications.
+          - Planning and implementing capacity expansion in order to ensure that the library’s databases are scalable.
+          - Developing database applications which are automated
+          - Diagnosing and resolving database access and checking on performance issues.
+          - Developing training and documentation to help library staff as well as student to make the most benefit of the library database system.
+
+
   education:
     title: Education
     icon: fas fa-graduation-cap
     list:
-      - degree: Ph.D. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: M.S. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: B.S. in Subject
-        college: University of State-City
-        dates: 2004 - 2009
+      - degree: M.Sc. Decision and Risk Managment
+        college: Institut Des Sciences Financieres et d’Assurance 
+        dates: 2011 - 2013
+        # thesis_title: "Effect of humans on other humans: a study of human behavior."
+        # thesis_url: "#"
+      - degree: M.Sc. in Actuary
+        college: Haute Ecole Commerciales (HEC) de Lausane 
+        dates: 2008 - 2010
+        # thesis_title: "Effect of humans on other humans: a study of human behavior."
+        # thesis_url: "#"
+      - degree: B.Sc. in Mathematics
+        college: University of Buea
+        dates: 2001 - 2007
   publication:
-    title: Publications
+    title: Certifications
     icon: fas fa-book
     format:
       - date
       - title
-      - authors
-      - journal
+      # - authors
+      # - journal
     types:
-      - Journal Articles
-      - Proceedings
+      - ADM-201
+      - LPIC1
+      - 1ZO-O71
+      - SAS Certified Base Programmer
     list:
       - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Journal Articles
+          Certified Salesforce Administrator
+        # authors: "F Last, F Second, P secondary"
+        date: "2023 "
+        # journal: "Journal of Field 52 (16), 9033-9044"
+        # url: "#"
+        type: ADM-201
       - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Journal Articles
+          Certified Entry-Level Linux Professional.
+        # authors: "F Last, F Second, P secondary"
+        date: "2022 "
+        # journal: "Journal of Field 52 (16), 9033-9044"
+        # url: "#"
+        type: LPIC1
       - title: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        authors: "F Last, F Second, P secondary"
-        date: "2018"
-        journal: "Journal of Field 52 (16), 9033-9044"
-        url: "#"
-        type: Proceedings
+          Oracle Database SQL Certified Associate
+        # authors: "F Last, F Second, P secondary"
+        date: "2015"
+        # journal: "Journal of Field 52 (16), 9033-9044"
+        # url: "#"
+        type: 1ZO-O71
+      - title: >-
+          Statistical Analysis System Certified Base Programmer
+        # authors: "F Last, F Second, P secondary"
+        date: "2015"
+        # journal: "Journal of Field 52 (16), 9033-9044"
+        # url: "#"
+        type: SAS Certified Base Programmer
   project:
     title: Projects
     icon: fas fa-project-diagram
     list:
-      - title: Project 1
+      - title: Coming Soon!!!
         url: "#"
-        description: Description of the project
-      - title: Project 2
-        url: "#"
-        description: Description of the project
-      - title: Project 3
-        url: "#"
-        description: Description of the project
-      - title: Project 4
-        url: "#"
-        description: Description of the project
+      #   description: Description of the project
+      # - title: Project 2
+      #   url: "#"
+      #   description: Description of the project
+      # - title: Project 3
+      #   url: "#"
+      #   description: Description of the project
+      # - title: Project 4
+      #   url: "#"
+      #   description: Description of the project
   skill:
     title: Skills
     panelId: skill-panel
     icon: fas fa-cogs
     list:
-      - skill: "Skill 1, Skill 2"
+      - skill: Managing user accounts, roles, profiles, permissions, and data access.
         skillrating: 90
-      - skill: Skill 3
+      - skill: Configuring security settings, including IP restrictions and session settings.
+        skillrating: 90
+      - skill: Importing, exporting, updating, and deduplicating data using tools like Data Loader.
+        skillrating: 90
+      - skill: Building and customizing reports and dashboards to meet business needs.
+        skillrating: 90
+      - skill: Designing automated workflows using Process Builder, Flow, and Approval Processes.
+        skillrating: 90
+      - skill: Creating and managing custom objects, fields, and record types to support specific business processes.
+        skillrating: 90
+      - skill: Customizing page layouts and record types for various user groups.
+        skillrating: 90
+      - skill: Familiarity with tools like Data Loader, Salesforce Import Wizard, or other third-party migration tools.
+        skillrating: 70
+      - skill: Understanding basic Apex triggers or writing simple custom code (optional for admin roles).
+        skillrating: 25
+      - skill: Querying Salesforce data using Salesforce Object Query Language (SOQL) or Salesforce Object Search Language (SOSL).
+        skillrating: 30
+      - skill: Basic understanding of APIs and how Salesforce integrates with third-party applications.
+        skillrating: 25
+      - skill: Installing various distributions such as Ubuntu, Debian, Red Hat, CentOS, and OpenSUSE.
+        skillrating: 75
+      - skill: Creating and customizing various chart types (e.g., Bar, Line, Pie, Scatter) to present data visually.
         skillrating: 80
-      - skill: Skill 4
+      - skill: Using slicers with pivot tables to filter data dynamically.
         skillrating: 50
+      - skill: Adding sparklines for mini-chart visualizations inside cells.
+        skillrating: 50
+      - skill: Applying icon sets, data bars, and color scales to highlight key trends and outliers.
+        skillrating: 60
   hobby:
     title: Hobbies
     icon: fas fa-gamepad
     list:
       - hobby: Cooking
-      - hobby: Hiking
-      - hobby: Baking
+      - hobby: Reading
+      - hobby: Movies
+      - hobby: Travelling

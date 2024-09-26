@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto dark"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>aafu theme</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Website title" />
+<meta name="author" content="Darshan Baral" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.134.3" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+
+
+
+<link href="/main.css" rel="stylesheet" />
+
+
+  
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
+>
+  <div>
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="http://localhost:1313/">Home</a>    
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/blog">Blog</a>
+  </div>
+  
+  <i
+    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    onclick="lightDark(this)"
+  ></i>
+</header>
+
+<script>
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>
+
+    
+    <main class="grow">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
+  <div class="col-span-2">
+    <div class="bg-gray-300 dark:bg-darker rounded drop-shadow-md p-2">
+      <div class="flex flex-col justify-center">
+        <div class=""><div class="w-100 h-100 flex justify-center p-4">
+  <img
+    class="rounded rounded-full"
+    src="/images/PrudenceDjembaT.png"
+    alt="Darshan Baral"
+    style="max-width: 250px"
+  />
+</div>
+</div>
+        <div class="p-2 text-center">
+          <h1 class="mb-0">Prudence Fotso M.</h1>
+<h2 class="mb-0"></h2>
+<h3 class="mb-4">Hutto, TX, USA</h3>
+<div class="mb-4 flex flex-wrap justify-center">
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://www.linkedin.com/in/Prudence-Fotso-Makeugne/">
+      <i class="mt-1 fab fa-linkedin-in"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://github.com/PrudenceDjembaT/">
+      <i class="mt-1 fab fa-github"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://twitter.com/Prudence-Fotso-Makeugne/">
+      <i class="mt-1 fab fa-twitter"></i>
+    </a>
+  </div>
+  
+</div>
+ <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  pt-2 ">
+  <p class="markdownify"></p>
+  <p >
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </p>
+</footer>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-span-3 relative">
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion active">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-user"></i>
+          Certified Salesforce Administrator</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><p class="markdownify">
+  As a bilingual (English and French) Certified Salesforce Administrator professional, I am seeking a challenging role in a dynamic organization where I can leverage my skills and competencies to grow alongside the company. I am a detail-oriented individual with a demonstrated commitment to excellence and a proven capacity to excel in fast-paced environments.
+</p>
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-briefcase"></i>
+          Experiences</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4 style="text-decoration: underline;">Customer Representative</h4>
+<p class="mb-0">
+  2015 - 2017 &middot;  WalMart – Austin/TX 
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Ensuring that all transactions, product restocking, and customer inquiries are handled with precision.</li>
+<li>Maintaining accurate records of customer complaints, product returns, and other important data.</li>
+<li>Identifying opportunities to offer additional products or services that may interest customers.</li>
+<li>Recommending relevant products based on customer needs and preferences.</li>
+<li>Proficiency in using Walmart’s Point of Sale systems to process transactions efficiently.</li>
+<li>Handling cash, credit card, and other transactions with accuracy and responsibility.</li>
+<li>Assisting with stock tracking and store replenishment using Walmart’s systems.</li>
+<li>Deep understanding of Walmart&rsquo;s products to help customers with inquiries or purchases.</li>
+</ul>
+
+</div>
+
+
+
+<h4 style="text-decoration: underline;">Junior SQL Analyst</h4>
+<p class="mb-0">
+  2014 - 2015 &middot;  University Of Lyon – Lyon/France 
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Provide application support\Database administration for internal applications</li>
+<li>Performed Server installation and configuration</li>
+<li>Design, Implement and maintain Database Schema, Tables, Stored procedures, Functions and Triggers, Constraints, Indexes, Schemas, Functions, Views, Rules, Defaults and complex SQL statements.</li>
+<li>Scheduled Database and Transactional log backups using the Database Maintenance Plans.</li>
+<li>Monitor backup availability and verify usability of the backup for disaster situations.</li>
+<li>Play a major role in improving the school Library database system.</li>
+<li>Assisted in mining data from the SQL database that was used in several significant presentations.</li>
+<li>Assisted in creating and presenting informational reports for management based on SQL data.</li>
+<li>Responsible for preparing the existing SQL platform for upgrades that were installed as soon as they were released.</li>
+</ul>
+
+</div>
+
+
+
+<h4 style="text-decoration: underline;">Software Analyst</h4>
+<p class="mb-0">
+  2012 - 2014 &middot;  University Of Lyon – Lyon/France 
+</p>
+
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<ul>
+<li>Analyzing different user requirements and coming up with specifications for the various database applications.</li>
+<li>Planning and implementing capacity expansion in order to ensure that the library’s databases are scalable.</li>
+<li>Developing database applications which are automated</li>
+<li>Diagnosing and resolving database access and checking on performance issues.</li>
+<li>Developing training and documentation to help library staff as well as student to make the most benefit of the library database system.</li>
+</ul>
+
+</div>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-graduation-cap"></i>
+          Education</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+<h4 style="text-decoration: underline;">M.Sc. Decision and Risk Managment</h4>
+<p >2011 - 2013 &middot; Institut Des Sciences Financieres et d’Assurance</p>
+
+
+
+<h4 style="text-decoration: underline;">M.Sc. in Actuary</h4>
+<p >2008 - 2010 &middot; Haute Ecole Commerciales (HEC) de Lausane</p>
+
+
+
+<h4 style="text-decoration: underline;">B.Sc. in Mathematics</h4>
+<p >2001 - 2007 &middot; University of Buea</p>
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-book"></i>
+          Certifications</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+
+
+<h4 style="text-decoration: underline;">ADM-201</h4><p class="foo indent-8">2023 .
+
+
+<em>Certified Salesforce Administrator.</em>
+
+
+</p>
+
+
+<h4 style="text-decoration: underline;">LPIC1</h4><p class="foo indent-8">2022 .
+
+
+<em>Certified Entry-Level Linux Professional.</em>
+
+
+</p>
+
+
+<h4 style="text-decoration: underline;">1ZO-O71</h4><p class="foo indent-8">2015.
+
+
+<em>Oracle Database SQL Certified Associate.</em>
+
+
+</p>
+
+
+<h4 style="text-decoration: underline;">SAS Certified Base Programmer</h4><p class="foo indent-8">2015.
+
+
+<em>Statistical Analysis System Certified Base Programmer.</em>
+
+
+</p>
+
+
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-project-diagram"></i>
+          Projects</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class="">
+<h4>
+  <a href="#">Coming Soon!!!</a>
+</h4>
+<p class="markdownify indent-8"></p>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-cogs"></i>
+          Skills</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+        id="skill-panel"
+        
+      >
+        <div class=""><script>
+  let skillPanel = document.querySelector("#skill-panel")
+    .previousElementSibling;
+  skillPanel.addEventListener("click", function() {
+    let skillBars = document.querySelectorAll("#skill-percent");
+    skillBars.forEach(elem => {
+      elem.style.width = elem.classList[0];
+    });
+  });
+</script>
+
+<code>Managing user accounts, roles, profiles, permissions, and data access.</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="90% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Configuring security settings, including IP restrictions and session settings.</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="90% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Importing, exporting, updating, and deduplicating data using tools like Data Loader.</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="90% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Building and customizing reports and dashboards to meet business needs.</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="90% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Designing automated workflows using Process Builder, Flow, and Approval Processes.</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="90% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Creating and managing custom objects, fields, and record types to support specific business processes.</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="90% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Customizing page layouts and record types for various user groups.</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="90% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Familiarity with tools like Data Loader, Salesforce Import Wizard, or other third-party migration tools.</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="70% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Understanding basic Apex triggers or writing simple custom code (optional for admin roles).</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="25% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Querying Salesforce data using Salesforce Object Query Language (SOQL) or Salesforce Object Search Language (SOSL).</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="30% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Basic understanding of APIs and how Salesforce integrates with third-party applications.</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="25% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Installing various distributions such as Ubuntu, Debian, Red Hat, CentOS, and OpenSUSE.</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="75% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Creating and customizing various chart types (e.g., Bar, Line, Pie, Scatter) to present data visually.</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="80% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Using slicers with pivot tables to filter data dynamically.</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="50% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Adding sparklines for mini-chart visualizations inside cells.</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="50% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Applying icon sets, data bars, and color scales to highlight key trends and outliers.</code>
+<div class="w-100 mt-1 mb-3 border border-black dark:border-gray-300 rounded" style="height: 1.25rem;">
+  <div id="skill-percent" class="60% bg-blue-500 dark:bg-yellow-700 h-full rounded" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="my-0 accordion">
+        
+        <p
+          class="hover:bg-gray-300 rounded dark:hover:bg-darker m-0 p-2"
+          onclick="expandAccordion(this)"
+          style="cursor: pointer"
+        >
+          <i class="fas fa-gamepad"></i>
+          Hobbies</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2"
+        
+      >
+        <div class=""><ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">Cooking</li>
+  
+  <li class="list-unstyled mb-2">Reading</li>
+  
+  <li class="list-unstyled mb-2">Movies</li>
+  
+  <li class="list-unstyled mb-2">Travelling</li>
+  
+</ul>
+</div>
+      </div>
+    </div>
+    
+
+    <script src="/js/accordion.js"></script>
+  </div>
+</div>
+
+    </main>
+    
+  </body>
+</html>
